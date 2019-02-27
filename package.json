@@ -1,13 +1,13 @@
 {
   "name": "ng2-charts7",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "peerDependencies": {
     "@angular/common": "^7.2.0",
     "@angular/core": "^7.2.0",
     "chart.js": "^2.7.3"
   },
   "dependencies": {},
-  "description": "This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.0.",
+  "description": "A revival of the \"valor-software/ng2-charts\" Angular library - updated for Angular 7",
   "main": "src/public_api.ts",
   "devDependencies": {
     "@types/chart.js": "^2.7.45"
@@ -15,6 +15,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Aviad Pineles",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paviad/ng2-charts7.git"
+  },
+  "keywords": [
+    "chart.js",
+    "angular"
+  ],
+  "bugs": {
+    "url": "https://github.com/paviad/ng2-charts7/issues"
+  },
+  "homepage": "https://github.com/paviad/ng2-charts7#readme"
 }
