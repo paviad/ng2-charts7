@@ -1,24 +1,80 @@
-# Charts
+# ng2-charts7 [![npm version](https://badge.fury.io/js/ng2-charts7.svg)](http://badge.fury.io/js/ng2-charts7) [![npm downloads](https://img.shields.io/npm/dm/ng2-charts7.svg)](https://npmjs.org/ng2-charts7) [![slack](https://ngx-slack.herokuapp.com/badge.svg)](https://ngx-slack.herokuapp.com)
+Beautiful charts for Angular2 based on Chart.js
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.0.
+<!-- [![Sauce Test Status](https://saucelabs.com/browser-matrix/valorkin.svg)](https://saucelabs.com/u/valorkin) -->
+[![NPM](https://nodei.co/npm/ng2-charts7.png?downloads=true&downloadRank=true&stars=true)](https://npmjs.org/ng2-charts7)
+[![NPM](https://nodei.co/npm-dl/ng2-charts7.png?height=3&months=9)](https://npmjs.org/ng2-charts7)
 
-## Code scaffolding
 
-Run `ng generate component component-name --project ng2-charts7` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ng2-charts7`.
-> Note: Don't forget to add `--project ng2-charts7` or else it will be added to the default project in your `angular.json` file. 
+# Usage & Demo
 
-## Build
+(Still unavailable)
 
-Run `ng build ng2-charts7` to build the project. The build artifacts will be stored in the `dist/` directory.
+- - -
 
-## Publishing
+### Installation
 
-After building your library with `ng build ng2-charts7`, go to the dist folder `cd dist/ng2-charts7` and run `npm publish`.
+1. You can install ***ng2-charts7*** using npm
 
-## Running unit tests
+  ```bash
+  npm install ng2-charts7 --save
+  ```
+2. You need to install `chart.js` library (it is a peer dependency of this library) (more info can be found in official `chart.js` [documentation](http://www.chartjs.org/docs/#getting-started))
 
-Run `ng test ng2-charts7` to execute the unit tests via [Karma](https://karma-runner.github.io).
+  ```bash
+  npm install chart.js --save
+  ```
+### Usage & Demo
+ Demo and API details of ***ng2-charts*** (the library which this one is spawned from) can be found here:
+  [demo](http://valor-software.github.io/ng2-charts/) and [source code](https://github.com/valor-software/ng2-charts/tree/master/demo).
 
-## Further help
+## API
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Import
+```typescript
+import { ChartsModule } from 'ng2-charts7';
+
+// In your App's module:
+imports: [
+   ChartsModule
+]
+```
+
+### Chart types
+There are one directive for all chart types: `base-chart`, and there are 6 types of charts: , `line`, `bar`, `radar`, `pie`, `polarArea`, `doughnut`.
+
+### Properties
+
+**Note**: For more information about possible options please refer to original [chart.js](http://www.chartjs.org/docs) documentation
+
+- `data` (`Array<number[]> | number[]`) -  set of points of the chart, it should be `Array<number[]>` only for `line`, `bar` and `radar`, otherwise `number[]`;
+- `datasets` (`Array<{data: Array<number[]> | number[], label: string}>`) - `data` see about, the `label` for the dataset which appears in the legend and tooltips
+- `labels` (`?Array<any>`) - x axis labels. It's necessary for charts: `line`, `bar` and `radar`. And just labels (on hover) for charts: `polarArea`, `pie` and `doughnut`
+- `chartType` (`?string`) - indicates the type of charts, it can be: `line`, `bar`, `radar`, `pie`, `polarArea`, `doughnut`
+- `options` (`?any`) - chart options (as from [Chart.js documentation](http://www.chartjs.org/docs/))
+- `colors` (`?Array<any>`) - data colors, will use default and|or random colors if not specified (see below)
+- `legend`: (`?boolean=false`) - if true show legend below the chart, otherwise not be shown
+
+### Events
+
+- `chartClick`: fires when click on a chart has occurred, returns information regarding active points and labels
+- `chartHover`: fires when mousemove (hover) on a chart has occurred, returns information regarding active points and labels
+
+
+### Colors
+
+There are a set several default colors. Colors can be replaced using the `colors` attribute. If there is more data than colors, colors are generated randomly.
+
+
+## Troubleshooting
+
+Please follow this guidelines when reporting bugs and feature requests:
+
+1. Use [GitHub Issues](https://github.com/paviad/ng2-charts7/issues) board to report bugs and feature requests (not our email address)
+2. Please **always** write steps to reproduce the error. That way we can focus on fixing the bug, not scratching our heads trying to reproduce it.
+
+Thanks for understanding!
+
+### License
+
+The MIT License (see the [LICENSE](https://github.com/paviad/ng2-charts7/blob/master/LICENSE) file for the full text)
