@@ -1,0 +1,20 @@
+{
+  "name": "ng2-charts7",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0",
+    "chart.js": "^2.7.3"
+  },
+  "dependencies": {},
+  "description": "This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.0.",
+  "main": "src/public_api.ts",
+  "devDependencies": {
+    "@types/chart.js": "^2.7.45"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
