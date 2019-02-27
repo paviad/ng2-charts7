@@ -8,6 +8,7 @@ import { BaseChartDirective } from './base-chart.directive';
   imports: [
   ],
   exports: [
+    BaseChartDirective
   ]
 })
 export class ChartsModule { }

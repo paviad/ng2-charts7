@@ -3,3 +3,4 @@
  */
 
 export * from './lib/charts.module';
+export * from './lib/base-chart.directive';
