@@ -1,14 +1,12 @@
-# ng2-charts7 [![npm version](https://badge.fury.io/js/ng2-charts7.svg)](http://badge.fury.io/js/ng2-charts7) [![npm downloads](https://img.shields.io/npm/dm/ng2-charts7.svg)](https://npmjs.org/ng2-charts7) [![slack](https://ngx-slack.herokuapp.com/badge.svg)](https://ngx-slack.herokuapp.com)
+# ng2-charts7 [![npm version](https://badge.fury.io/js/ng2-charts7.svg)](http://badge.fury.io/js/ng2-charts7) [![npm downloads](https://img.shields.io/npm/dm/ng2-charts7.svg)](https://npmjs.org/ng2-charts7)
 Beautiful charts for Angular2 based on Chart.js
 
-<!-- [![Sauce Test Status](https://saucelabs.com/browser-matrix/valorkin.svg)](https://saucelabs.com/u/valorkin) -->
 [![NPM](https://nodei.co/npm/ng2-charts7.png?downloads=true&downloadRank=true&stars=true)](https://npmjs.org/ng2-charts7)
 [![NPM](https://nodei.co/npm-dl/ng2-charts7.png?height=3&months=9)](https://npmjs.org/ng2-charts7)
 
-
 # Usage & Demo
 
-(Still unavailable)
+[StackBlitz Demo](https://stackblitz.com/edit/ng2-charts7-demo)
 
 - - -
 
@@ -24,9 +22,6 @@ Beautiful charts for Angular2 based on Chart.js
   ```bash
   npm install chart.js --save
   ```
-### Usage & Demo
- Demo and API details of ***ng2-charts*** (the library which this one is spawned from) can be found here:
-  [demo](http://valor-software.github.io/ng2-charts/) and [source code](https://github.com/valor-software/ng2-charts/tree/master/demo).
 
 ## API
 
