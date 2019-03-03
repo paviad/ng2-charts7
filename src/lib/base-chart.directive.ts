@@ -36,6 +36,13 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit {
 
   private element: ElementRef;
 
+  /**
+   * Register a plugin.
+   */
+  public static registerPlugin(plugin: any): void {
+    Chart.plugins.register(plugin);
+  }
+
   public constructor(element: ElementRef) {
     this.element = element;
   }

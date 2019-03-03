@@ -4,6 +4,8 @@ Beautiful charts for Angular2 based on Chart.js
 [![NPM](https://nodei.co/npm/ng2-charts7.png?downloads=true&downloadRank=true&stars=true)](https://npmjs.org/ng2-charts7)
 [![NPM](https://nodei.co/npm-dl/ng2-charts7.png?height=3&months=9)](https://npmjs.org/ng2-charts7)
 
+Original repo at https://github.com/valor-software/ng2-charts
+
 # Usage & Demo
 
 [StackBlitz Demo](https://stackblitz.com/edit/ng2-charts7-demo)
